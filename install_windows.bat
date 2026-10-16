@@ -79,6 +79,18 @@ if errorlevel 1 (
 )
 
 echo.
+echo Creating data directories...
+
+if not exist "data" mkdir "data"
+if not exist "data\test" mkdir "data\test"
+if not exist "data\train" mkdir "data\train"
+if not exist "data\validation" mkdir "data\validation"
+
+if not exist "results" mkdir "results"
+
+echo Data directories are ready.
+
+echo.
 echo ============================================
 echo Installation completed.
 echo ============================================
